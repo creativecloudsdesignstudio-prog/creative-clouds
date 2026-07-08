@@ -167,3 +167,57 @@ nav{
 .secondary-btn:hover{
     transform:translateY(-4px);
 }
+
+/* Mobile Responsive */
+
+@media screen and (max-width:768px){
+
+nav{
+    padding:20px;
+}
+
+.logo{
+    font-size:28px;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+    display:none;
+}
+
+.hero{
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    gap:40px;
+    padding:120px 20px 60px;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.15;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:100%;
+}
+
+.buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.primary-btn,
+.secondary-btn{
+    width:280px;
+}
+
+}
