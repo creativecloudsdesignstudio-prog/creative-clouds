@@ -84,6 +84,11 @@ nav{
     padding:25px 0;
     gap:25px;
 }
+    .nav-links.active{
+    display:flex;
+}
+
+        }
 
 .menu-toggle{
     display:block;
