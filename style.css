@@ -217,7 +217,10 @@ nav{
 
 .primary-btn,
 .secondary-btn{
-    width:250px;
+    width:auto;
+    min-width:210px;
+    padding:15px 30px;
 }
+
 
 
