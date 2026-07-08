@@ -214,6 +214,21 @@ nav{
 
 .nav-links{
     display:none;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    left:20px;
+    right:20px;
+    background:#12121a;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    gap:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.nav-links.active{
+    display:flex;
 }
 
 .hero{
