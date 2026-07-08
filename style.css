@@ -168,6 +168,29 @@ nav{
     transform:translateY(-4px);
 }
 
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:520px;
+    animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    
+    }
+
 /* Mobile Responsive */
 
 @media screen and (max-width:768px){
