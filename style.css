@@ -41,6 +41,28 @@ nav ul li a{
 nav ul li a:hover{
     color:#22d3ee;
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+nav{
+    padding:20px;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
 
 .hero{
     min-height:90vh;
