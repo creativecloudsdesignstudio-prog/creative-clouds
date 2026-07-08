@@ -1,12 +1,14 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const menu = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+menu.onclick = () => {
 
-    if (navLinks.classList.contains("active")) {
-        menuToggle.innerHTML = "✕";
-    } else {
-        menuToggle.innerHTML = "☰";
+    nav.classList.toggle("active");
+
+    if(nav.classList.contains("active")){
+        menu.innerHTML = "✕";
+    }else{
+        menu.innerHTML = "☰";
     }
-});
+
+}
