@@ -104,7 +104,7 @@ nav{
 .hero-content{
     position:relative;
     z-index:2;
-    max-width:850px;
+    max-width:768px;
 }
 
 .hero-badge{
