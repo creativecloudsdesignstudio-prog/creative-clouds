@@ -48,8 +48,49 @@ nav ul li a:hover{
     cursor:pointer;
 }
 
-@media(max-width:768px){
+    @media (max-width:768px){
 
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-size:56px;
+    line-height:1.1;
+    word-break:break-word;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.hero-image{
+    margin-top:40px;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:350px;
+}
+
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+}
+
+.buttons button{
+    width:280px;
+}
+
+    }
 nav{
     padding:20px;
 }
