@@ -193,7 +193,7 @@ nav{
 
 /* Mobile Responsive */
 
-@media screen and (max-width:768px)
+@media screen and (max-width:768px){
 
 nav{
     padding:20px;
@@ -254,7 +254,6 @@ nav{
     max-width:320px;
 }
 
-} /* <--
-
+    }
 
 
