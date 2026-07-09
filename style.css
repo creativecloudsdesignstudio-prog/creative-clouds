@@ -474,15 +474,18 @@ nav{
 }
 
 .section-title h2{
-    font-size:48px;
+    font-size: clamp(32px, 5vw, 48px);
     margin:15px 0;
+    line-height:1.2;
+    word-wrap:break-word;
+   }
 }
 
-.section-title p{
-    color:#bdbdbd;
-    max-width:650px;
-    margin:auto;
-    line-height:1.8;
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    padding:0 20px;
+       }
 }
 
 .portfolio-grid{
