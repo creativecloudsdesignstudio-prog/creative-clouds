@@ -343,3 +343,58 @@ nav{
     line-height:1.8;
     font-size:16px;
    }
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:120px 20px 60px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.hero-image img{
+    max-width:320px;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.services{
+    padding:80px 20px;
+}
+
+.services-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+   }
+   
