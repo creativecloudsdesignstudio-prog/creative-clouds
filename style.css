@@ -227,16 +227,23 @@ nav{
     box-shadow:0 15px 35px rgba(34,211,238,.35);
 }
 
-.secondary-btn{
-    background:transparent;
-    color:#fff;
-    border:2px solid #22d3ee;
+.secondary-btn:hover{
+    background:#22d3ee;
+    color:#09090f;
+    transform:translateY(-5px);
 }
 
-.secondary-btn:hover{
-    background:#
-   }
-       }
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:480px;
+}
+
 /* ==========================================
    SERVICES SECTION
 ========================================== */
