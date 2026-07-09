@@ -401,3 +401,117 @@ nav{
 
    }
    
+/* ==========================================
+   PORTFOLIO SECTION
+========================================== */
+
+.portfolio{
+    padding:100px 8%;
+    background:#09090f;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:60px;
+}
+
+.portfolio-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    backdrop-filter:blur(15px);
+    transition:.4s ease;
+    cursor:pointer;
+    overflow:hidden;
+    position:relative;
+}
+
+.portfolio-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.08),
+        transparent
+    );
+    transition:.6s;
+}
+
+.portfolio-card:hover::before{
+    left:100%;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-12px);
+    border-color:#22d3ee;
+    box-shadow:0 20px 45px rgba(34,211,238,.25);
+}
+
+.portfolio-icon{
+    width:85px;
+    height:85px;
+    margin:0 auto 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:linear-gradient(135deg,#22d3ee,#8b5cf6);
+    font-size:42px;
+    color:#fff;
+}
+
+.portfolio-card h3{
+    font-size:26px;
+    margin-bottom:15px;
+    color:#ffffff;
+}
+
+.portfolio-card p{
+    color:#bdbdbd;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ==========================================
+   PORTFOLIO MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .portfolio{
+        padding:80px 20px;
+    }
+
+    .portfolio-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .portfolio-card{
+        padding:35px 25px;
+    }
+
+    .portfolio-icon{
+        width:75px;
+        height:75px;
+        font-size:36px;
+    }
+
+    .portfolio-card h3{
+        font-size:22px;
+    }
+
+    .portfolio-card p{
+        font-size:16px;
+    }
+
+   }
