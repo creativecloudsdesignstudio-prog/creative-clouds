@@ -743,3 +743,35 @@ nav{
 }
 
 }
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    padding:0 20px;
+}
+
+.section-title span{
+    color:#22d3ee;
+    font-size:18px;
+    font-weight:600;
+}
+
+.section-title h2{
+    font-size:48px;
+    margin:15px 0;
+    line-height:1.2;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.section-title h2{
+    font-size:34px;
+}
+
+   }
