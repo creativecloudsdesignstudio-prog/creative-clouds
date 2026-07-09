@@ -443,3 +443,115 @@ nav{
 }
 
        }
+/* ==========================================
+   PORTFOLIO SECTION
+========================================== */
+
+.portfolio{
+    padding:100px 8%;
+    overflow:hidden;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    padding:0 20px;
+}
+
+.section-title span{
+    color:#22d3ee;
+    font-size:18px;
+    font-weight:600;
+}
+
+.section-title h2{
+    font-size:48px;
+    margin:15px 0;
+    line-height:1.2;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.portfolio-card{
+    position:relative;
+    height:320px;
+    border-radius:24px;
+    overflow:hidden;
+    cursor:pointer;
+    background:linear-gradient(135deg,#171727,#24243d);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 20px 50px rgba(34,211,238,.25);
+}
+
+.portfolio-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.8),
+        rgba(0,0,0,.15)
+    );
+}
+
+.portfolio-overlay{
+    position:absolute;
+    bottom:25px;
+    left:25px;
+    right:25px;
+    z-index:2;
+}
+
+.portfolio-overlay h3{
+    font-size:24px;
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.portfolio-overlay p{
+    color:#d5d5d5;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.portfolio{
+    padding:80px 20px;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.section-title p{
+    font-size:16px;
+}
+
+.portfolio-grid{
+    grid-template-columns:1fr;
+}
+
+.portfolio-card{
+    height:240px;
+}
+
+   }
